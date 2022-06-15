@@ -10,12 +10,12 @@ namespace BaseAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class CustomerBasicController : ControllerBase
     {
         //private readonly APIConfig _config;
         private readonly string _path = $"C:\\Users\\Tecnologia7.ERITELTELECOM\\source\\repos\\BaseAPI\\BaseAPI\\FakeData";
 
-        public CustomerController()
+        public CustomerBasicController()
         {
             //_path = null;
             //_path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);

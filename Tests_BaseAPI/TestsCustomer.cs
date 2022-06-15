@@ -11,7 +11,7 @@ namespace Tests_BaseAPI
 {
     public class TestsCustomer
     {
-        CustomerController _controller = new CustomerController();
+        CustomerBasicController _controller = new CustomerBasicController();
         [Fact]
         public void Get()
         {
