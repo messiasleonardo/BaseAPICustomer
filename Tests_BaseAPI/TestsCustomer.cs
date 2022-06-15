@@ -16,20 +16,20 @@ namespace Tests_BaseAPI
         public void Get()
         {
             //Arrage
-            var expected = new List<Customer>();
+            var expected = 1;
             //Act
             var actual = _controller.Get();
             //Assert
-            Assert.Equal(expected, actual);
+            Assert.True(actual?.Count > expected);
         }
 
         [Theory]
-        [InlineData(1)]
+        [InlineData(10)]
         public void GetCustomerWithId(int id)
         {
-            var request = new Customer { Id = id };
+
             //Arrage
-            var expected = new Customer();
+            var expected = new Customer { Id = 10};
 
             //Act
             var actual = _controller.Get(id);
